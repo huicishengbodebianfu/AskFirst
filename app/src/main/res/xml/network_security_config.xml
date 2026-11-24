@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  全构建通用：只许 HTTPS，但**信任用户安装的证书**。
+  为什么允许 user 证书：自建网关 / 公司代理 / 抓包调试都要它；这个 App 不上架、只自用，
+  与其让人去改手机系统库，不如把"用户可以装 CA"这条路留出来。
+  debug 构建的这份配置会被 src/debug/res/xml 里的同名文件覆盖（额外放行明文 + 内置 magpie CA）。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "scene_tech_arch",
+  "name": "技术方案 · 架构选型",
+  "focus": "把一个模糊的技术想法逼到能开工：痛点、边界、候选、规模、退路",
+  "planSkeleton": [
+    "背景与问题",
+    "目标与非目标",
+    "约束",
+    "方案对比表",
+    "选定方案与设计要点",
+    "迁移与回滚",
+    "风险与待决问题",
+    "排期里程碑"
+  ],
+  "questions": [
+    {
+      "id": "tech_q1",
+      "order": 1,
+      "text": "这次要解决什么问题？如果不上这个方案，现在最痛的具体表现是什么？",
+      "why": "先钉住痛点。痛点不清楚，后面所有选型都没有判据，只能比谁更时髦",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "tech_q2",
+      "order": 2,
+      "text": "边界条件：时间、人力、预算、必须复用的现有系统、绝对不许引入的东西——哪几条是硬的？",
+      "why": "边界决定候选集。没有硬边界，方案对比会变成许愿池",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "tech_q3",
+      "order": 3,
+      "text": "候选方案有哪些？把「什么都不做」也算一个候选。",
+      "why": "不做往往是最便宜的基线，没人提就永远不会被比较",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "tech_q4",
+      "order": 4,
+      "text": "各方案在这三个维度上的差异：一次性建设成本 / 长期维护成本 / 出错后的可逆性。",
+      "why": "决定选型的是这三个维度，不是「哪个更先进」。可逆性尤其少被问",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "tech_q5",
+      "order": 5,
+      "text": "真实规模：现在多少量，一年后预期多少量？用数字说。",
+      "why": "防过度设计。九成「架构选型」失败是因为按想象中的规模选型",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "tech_q6",
+      "order": 6,
+      "text": "谁长期维护这套东西？他熟悉什么、不熟悉什么？",
+      "why": "维护者能力是硬约束。选一个维护者不会改的方案等于没有方案",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "tech_q7",
+      "order": 7,
+      "text": "有没有人已经踩过这个坑？内部先例、外部案例各是什么？",
+      "why": "先例能省掉一轮试错；没有先例意味着要自己承担全部验证成本",
+      "required": false,
+      "kind": "open",
+      "trigger": "迁移|重构|替换|升级"
+    },
+    {
+      "id": "tech_q8",
+      "order": 8,
+      "text": "出现什么信号说明选错了？退路是什么，退一次要多久？",
+      "why": "选型不是一次性决定，是带止损线的赌注。止损线要在开工前定",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "tech_q9",
+      "order": 9,
+      "text": "这次决定要留下什么记录？多久之后回看它？",
+      "why": "半年后你会忘了为什么这么选。没有记录就无法复盘，也无法向别人解释",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    }
+  ]
+}

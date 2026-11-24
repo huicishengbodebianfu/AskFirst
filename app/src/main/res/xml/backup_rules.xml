@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 11 及以下的 Auto Backup 规则。
+
+  注意：**空的 <full-backup-content> 不等于「不备份」**——Android 只有在出现 <include> 之后才切换成
+  「只备份列出的东西」，只有空规则时默认备份全部应用数据（askfirst.db 里是全部会话/单子/方案）。
+  所以真正的开关是 AndroidManifest 里的 android:allowBackup="false"（docs/28 P1-7）。
+  这个文件先留空壳；以后若要开备份（例如只允许设备迁移），必须写明 include/exclude 再改那个开关。
+-->
+<full-backup-content>
+</full-backup-content>

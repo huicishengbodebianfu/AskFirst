@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 崩溃日志目录：只有这里能通过 FileProvider 分享出去 -->
+    <files-path name="crash" path="crash/" />
+</paths>

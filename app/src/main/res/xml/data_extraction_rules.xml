@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 12+ 云备份 / 设备迁移规则。
+
+  空的 <cloud-backup /> 同样不等于「不备份」：默认行为是备份全部应用数据。
+  实际开关是 AndroidManifest 的 android:allowBackup="false"（docs/28 P1-7）——
+  这个 App 的对外承诺是「数据只在本机」，所以一律不参与云端备份与设备迁移。
+  以后要开，必须在这里写 include/exclude 并同步改那个开关。
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="root" path="." />
+    </device-transfer>
+</data-extraction-rules>

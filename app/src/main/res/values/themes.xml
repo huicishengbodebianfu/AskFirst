@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Compose 应用不需要 AppCompat / MaterialComponents 的 XML 主题，
+      这里用平台 Material 主题即可（minSdk 26 均可用），
+      真正的配色由 Theme.kt 的 Material3 colorScheme 提供。
+    -->
+    <style name="Theme.AskFirst" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/askfirst_window_background</item>
+    </style>
+</resources>

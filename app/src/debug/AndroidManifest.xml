@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+      debug 构建不再单独声明 networkSecurityConfig：
+      main manifest 已经指向 @xml/network_security_config，
+      而 src/debug/res/xml 里的同名文件会在打包时覆盖 main 的那份
+      （放行明文 + 额外信任内置的 magpie CA）。
+      这里保留本文件是为了以后往 debug 里加别的东西。
+    -->
+</manifest>

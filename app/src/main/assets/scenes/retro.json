@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "scene_retro",
+  "name": "复盘 · 总结",
+  "focus": "把一次经历压成可复用的判断：目标对不对、转折在哪、下次改什么",
+  "planSkeleton": [
+    "原定目标",
+    "实际结果",
+    "差距归因",
+    "关键转折点",
+    "运气 vs 能力",
+    "下次改什么",
+    "结论与行动项",
+    "待验证"
+  ],
+  "questions": [
+    {
+      "id": "retro_q1",
+      "order": 1,
+      "text": "当时定的目标是什么？引当时的原话，不要事后改写。",
+      "why": "复盘最常见的自欺是「我当时就想这样」。原话是唯一能挡住它的证据",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "retro_q2",
+      "order": 2,
+      "text": "实际结果是什么？用数字或具体证据描述。",
+      "why": "没有数字的复议会滑成情绪总结，滑成情绪就没有可复用的东西",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "retro_q3",
+      "order": 3,
+      "text": "差距在哪？是执行问题，还是目标本身定错了？",
+      "why": "执行问题和目标错误是两种完全不同的教训，混在一起就什么都学不到",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "retro_q4",
+      "order": 4,
+      "text": "关键转折点：哪件事之后，结果其实就定了？",
+      "why": "转折点比过程叙述有用得多，它才是下次能干预的地方",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "retro_q5",
+      "order": 5,
+      "text": "重做一次，你会砍掉哪一步、加上哪一步？",
+      "why": "「砍」和「加」是可执行的动作，比「下次更谨慎」有用",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "retro_q6",
+      "order": 6,
+      "text": "哪些是运气，哪些是可复制的能力？诚实区分。",
+      "why": "把运气当能力，下次会重复押注；把能力当运气，会放弃已经验证过的方法",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "retro_q7",
+      "order": 7,
+      "text": "有没有当时觉得不重要、现在看是关键的事？",
+      "why": "这类信号是下次判断优先级的依据，但事后很容易被忘掉",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "retro_q8",
+      "order": 8,
+      "text": "下次遇到同样局面，第一句该提醒自己什么？",
+      "why": "能压缩成一句话的才是真结论；压不出来说明还没想透",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "retro_q9",
+      "order": 9,
+      "text": "这次的结论要写进哪件未来事项的确认单里？",
+      "why": "结论不落到具体未来事项上，复盘就只停在这份文档里",
+      "required": false,
+      "kind": "open",
+      "trigger": "下个|下次|以后|新项目"
+    }
+  ]
+}

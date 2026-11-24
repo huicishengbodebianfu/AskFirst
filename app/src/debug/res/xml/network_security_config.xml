@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  仅 debug 构建生效（同名资源覆盖 main 的那份）：
+  1) 允许明文 HTTP —— 本机假 SSE 服务（adb reverse 127.0.0.1）与局域网 HTTP 网关
+  2) 信任系统 CA + 用户 CA + **内置的 magpie CA**（app/src/debug/res/raw/magpie_ca.pem）
+     内置 CA 是为了：不用在手机上手动装证书，也能直接连 https://127.0.0.1:3425 这类自签网关。
+  release 构建不带这份覆盖，仍只许 HTTPS（但允许用户 CA，见 main 的配置）。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+            <certificates src="@raw/magpie_ca" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

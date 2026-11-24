@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "scene_project",
+  "name": "项目立项 · 需求梳理",
+  "focus": "把「我想做个东西」逼成「谁的问题、值得做多大、什么情况下关掉」",
+  "planSkeleton": [
+    "问题定义",
+    "目标用户与场景",
+    "现状替代方案",
+    "目标与成功指标",
+    "MVP 范围 / 明确不做",
+    "方案概述",
+    "资源与排期",
+    "停损条件",
+    "待决问题"
+  ],
+  "questions": [
+    {
+      "id": "proj_q1",
+      "order": 1,
+      "text": "问题是谁的？描述一个你亲眼见到的具体场景，不要写抽象人群。",
+      "why": "抽象人群永远不会被验证。一个你亲眼见过的场景才是需求的唯一证据",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "proj_q2",
+      "order": 2,
+      "text": "他们现在怎么凑合解决的？",
+      "why": "现有凑合办法既暴露真实痛度，也决定你真正的对手是谁",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "proj_q3",
+      "order": 3,
+      "text": "不解决会怎样？谁最难受，难受到什么程度？",
+      "why": "「难受」的强度决定付费/使用的意愿；说不清就是还不够痛",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "proj_q4",
+      "order": 4,
+      "text": "第一版只服务谁？明确不服务谁？",
+      "why": "「不服务谁」比「服务谁」更能收敛范围，也更能防范围自己长出来",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "proj_q5",
+      "order": 5,
+      "text": "上线 4 周后看哪个数字？多少算成，多少算没成？",
+      "why": "没有数字的成功标准等于没有标准，最后只能靠感觉判断",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "proj_q6",
+      "order": 6,
+      "text": "最小闭环是哪一段？砍到最后必须留下的那一个动作是什么？",
+      "why": "最小闭环决定第一版能不能在两周内跑起来；砍不动就是还没想清楚核心",
+      "required": true,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "proj_q7",
+      "order": 7,
+      "text": "明确不做清单：这次一定不做的有哪些？",
+      "why": "范围自己会长出来。先写死不做清单，等于给未来省一轮拉扯",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    },
+    {
+      "id": "proj_q8",
+      "order": 8,
+      "text": "有没有不做产品就能验证的办法？最便宜的验证是什么？",
+      "why": "最便宜的验证通常是手工/人工的，它能把「值不值得做」在写代码前确认掉",
+      "required": false,
+      "kind": "open",
+      "trigger": "上线|发布|推广|获客"
+    },
+    {
+      "id": "proj_q9",
+      "order": 9,
+      "text": "资源：谁做、多久、钱从哪来、现在最容易卡在哪？",
+      "why": "资源是最容易被忽略的约束，而它决定了排期能不能成立",
+      "required": false,
+      "kind": "open",
+      "trigger": "付|收费|定价|订阅|变现"
+    },
+    {
+      "id": "proj_q10",
+      "order": 10,
+      "text": "停损点：什么情况下你愿意主动关掉它？",
+      "why": "先说好退出的条件，才不会在沉没成本里拖一年",
+      "required": false,
+      "kind": "open",
+      "trigger": null
+    }
+  ]
+}

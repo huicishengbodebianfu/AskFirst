@@ -1,0 +1,36 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.aab
+
+# 本地产物 / 崩溃证据
+/.artifacts/
+hs_err_pid*.log
+replay_pid*.log
+*.hprof
+/.kotlin/
+
+# 签名材料与本地配置（**任何凭据都不许入库**）
+keystore.properties
+*.jks
+*.keystore
+
+# 个人自用目录：默认值、网关信息、CA、以及编译期注入的 personal.properties
+# 开源仓库里不带它；自己用就在本地建（见 README「个人自用配置」）
+/自用/
+
+# 发布包不入库（用 dist/ 手工分发）
+/dist/
+
+# Python 工具的字节码
+__pycache__/
+*.pyc
